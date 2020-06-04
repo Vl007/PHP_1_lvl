@@ -1,7 +1,8 @@
 <?php
 $title = 'Первое задание по курсу PHP_1_lvl';
-$date_today = date("d.m.Y"); //присвоено 12.03.15';
-$today = date("H:i:s:"); //присвоит 1 элементу массива 18:32:17
+date_default_timezone_set("Europe/Moscow");
+$date_today = date("d.m.Y"); //присвоено 04.06.2020';
+$today = date("H:i:s:");
 ?>
 <!DOCTYPE html>
 <html lang="en">
