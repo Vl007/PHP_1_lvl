@@ -7,9 +7,9 @@
 function renderNews($news)
 {
     foreach ($news as $key => $value){
-        echo '<a href="https://www.yandex.ru">' . $key . '</a>';
+        echo '<a style="text-decoration: none" href="https://www.yandex.ru">' . $key . '</a>';
         if (is_array($value)){
-            echo "<ul>$key";
+            echo "<ul style='list-style: none'>$key";
             foreach ($value as $newsli){
                 echo '<li>' . $newsli . '</li>';
             }
@@ -143,9 +143,9 @@ $arr = [
                 width: 100%;
             }
 
-            header > nav > div > a > span {
-                display: none;
-            }
+            /*header > nav > div > a > span {*/
+            /*    display: none;*/
+            /*}*/
         }
     </style>
 
