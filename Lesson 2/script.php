@@ -136,7 +136,7 @@ echo (getResultByOperation(7, 7, ':') . '<br>');
 // Задание 5
 $timestamp = time(); // Зафиксировали время
 $date = date('Y', $timestamp);
-$html = file_get_contents('index.html');
+$html = file_get_contents('footer.html');
 $html = str_replace('{{YEAR}}', "$date", $html);
 echo $html;
 
