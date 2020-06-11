@@ -8,12 +8,12 @@
 //10 – четное число.
 function outputOfNumbers ($n) {
     if ($n === 0) {
-        return $n . '-' . 'Это ноль';
+        return $n . ' - ' . 'Это ноль';
     }
     if ($n % 2 !== 0) {
-        return $n . '-' . 'Это нечетное число';
+        return $n . ' - ' . 'Это нечетное число';
     } else {
-        return $n . '-' . 'Это четное число';
+        return $n . ' - ' . 'Это четное число';
     }
 }
 
@@ -21,8 +21,8 @@ $i = 0;
 $max = 10;
 
 do {
-    echo '<prev>';
+    echo '<prev><br>';
     echo (outputOfNumbers($i));
     $i++;
-    echo '</prev>';
+    echo '</prev><br>';
 } while($i <= $max);
