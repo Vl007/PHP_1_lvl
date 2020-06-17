@@ -1,7 +1,7 @@
 <?php
-define('DIR', 'img/');
+define('DIR', 'img');
 if (isset($_POST['submit'])) {
-    $path = DIR . $_FILES['picture']['name'];
+    $path = DIR . '/' . $_FILES['picture']['name'];
     if (!copy($_FILES['picture']['tmp_name'], $path)) {
         die("Не предвиденная ошибка загрузки файла!");
     }
