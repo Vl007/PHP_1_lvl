@@ -2,7 +2,7 @@
 $link = mysqli_connect('localhost', 'root', 'root', 'gallery');
 if (!empty($_GET['likes'])){
     $idImg = $_GET['id'];
-    $sql = "SELECT id, path, likes, views FROM images WHERE id = $idImg";
+    $sql = 'SELECT id, path, likes, views FROM images WHERE id = $idImg';
     $result = mysqli_query($link, $sql);
     if ($row = mysqli_fetch_assoc($result)) {
         $likesId = (int)$row['likes'];
@@ -20,17 +20,13 @@ foreach ($dirArr as $key => $value) {
         $address = "img" . "/{$value}";
         $name = $matches[0];
         $sql = "SELECT id, address, size, name FROM images2 WHERE name = '$name'";
-//            mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         $res = mysqli_query($link, $sql);
         if(!mysqli_fetch_assoc($res)){
             $sql = "INSERT INTO
-
                     images2
-
                         (address, size, name)
-
                     VALUES
-
+>>>>>>> Stashed changes
                         ('$address', $size, '$name')";
             mysqli_query($link, $sql) or die(mysqli_error($link));
         }

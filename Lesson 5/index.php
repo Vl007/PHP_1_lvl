@@ -12,11 +12,9 @@
 <body>
 
 <div>
-
     <?php
     require_once 'server.php';
     ?>
-
 </div>
 
 </body>
