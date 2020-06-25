@@ -15,13 +15,13 @@
         <div id="logo"></div>
         <div id="companyName">Brand</div>
         <div id="navWrap">
-            <a href="/">
+            <a href="?p=home">
                 Главная
             </a>
             <a href="?p=shop">
                 Товары
             </a>
-            <a href="#">
+            <a href="?p=cartShop">
                 Корзина
             </a>
             <a href="?p=login">
