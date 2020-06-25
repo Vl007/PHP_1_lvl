@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $_SESSION['name'] = 'Администратор';
         $_SESSION['login'] = $_POST['login'];
         var_dump($_SESSION);
-        header('Location: /?p=loginUser');
+        header('Location: /views/loginUser.php');
         exit;
     }
 }
