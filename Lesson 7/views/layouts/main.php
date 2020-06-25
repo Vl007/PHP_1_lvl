@@ -50,8 +50,9 @@
         </div>
 
         <div id="footerNav">
-            <a href="/">Главная</a>
-            <a href="?p=shop">Магазин</a>
+            <a href="?p=home">Главная</a>
+            <a href="?p=shop">Товары</a>
+            <a href="?p=cartShop">Корзина</a>
         </div>
 
         <div id="social">
